@@ -1,24 +1,79 @@
-.section-body{
-    color: blanchedalmond;
-    height: 100vh;
+.section-body {
+  color: blanchedalmond;
+  height: 100vh;
 }
 
-.heading{
-    font-size: 100px;
+.section-body-2{
+  color: blanchedalmond;
+  height: 150vh;
 }
 
-.heading-2{
-    font-size: 85px;
+.section-body-3{
+  color: blanchedalmond;
 }
 
-.sub-heading{
-    font-size: x-large;
+.heading {
+  font-size: 100px;
 }
 
-.sub-heading-2{
-    font-size: 20px;
+.heading-2 {
+  font-size: 75px;
 }
 
-.section-2{
+.sub-heading {
+  font-size: x-large;
+}
+
+.sub-heading-2 {
+  font-size: 20px;
+}
+
+.sub-heading-3 {
+  font-size: 30px;
+}
+
+.section-2 {
+  background-color: #171616;
+}
+
+.section-3 {
+  background-color: #2a2e32;
+}
+
+.accordion-header-section{
     background-color: #171616;
+    color: #ffffff;
+}
+
+.card-section{
+  background-color: #242424;
+    color: #ffffff;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .accordion-section {
+    width: auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .accordion-section {
+    width: auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .accordion-section {
+    width: 800px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .accordion-section {
+    width: 1200px;
+  }
 }
