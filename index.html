@@ -1,53 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Import Fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/ee2c6a13c7.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="Footer.css" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="Milestone.css" />
-    <title>KubeMate</title>
-  </head>
-  <body>
-    <!-- Navbar Component -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Import Fontawesome -->
+  <script src="https://kit.fontawesome.com/ee2c6a13c7.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="Footer.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="Milestone.css" />
+  <title>KubeMate</title>
+</head>
+
+<body>
+  <!-- Navbar Component -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">KubeMate</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Introduction</a>
@@ -75,617 +57,690 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Section One Component -->
-    <div class="section-body container">
-      <div class="row h-100 justify-content-center align-items-center">
-        <div class="text-center">
-          <p class="heading">KubeMate</p>
-          <p class="sub-heading">
-            ARTIFICIAL INTELLIGENCE BASED CENTRALIZED RESOURCE MANAGEMENT
-            APPLICATION FOR DISTRIBUTED SYSTEMS
+  <!-- Section One Component -->
+  <!-- <div class="section-body container">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="text-center">
+        <p class="heading">KubeMate</p>
+        <p class="sub-heading">
+          ARTIFICIAL INTELLIGENCE BASED CENTRALIZED RESOURCE MANAGEMENT
+          APPLICATION FOR DISTRIBUTED SYSTEMS
+        </p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Section Two Component -->
+  <!-- <section class="section-body section-2 h-100">
+    <header class="container h-100">
+      <div class="d-flex align-items-center justify-content-center h-100">
+        <div class="d-flex flex-column text-center">
+          <p class="heading-2">What is KubeMate?</p>
+          <p class="sub-heading-2">
+            KubeMate is a centralized resource management tool to optimize deployment of resources,
+            that also provides a low latency container management system
           </p>
         </div>
       </div>
-    </div>
+    </header>
+  </section> -->
 
-    <!-- Section Two Component -->
-    <section class="section-body section-2 h-100">
-      <header class="container h-100">
-        <div class="d-flex align-items-center justify-content-center h-100">
-          <div class="d-flex flex-column text-center">
-            <p class="heading-2">What is KubeMate?</p>
-            <p class="sub-heading-2">
-              K8Advisor addresses the existence of inefficient optimization
-              policies prevalent in container orchestration platforms such as in
-              Kubernetes through the utilization of a novel network
-              science-based microservice governance model which incorporates the
-              relationships among the interdependent microservices during
-              runtime as well as resilience and the impact of autoscaling
-              policies to facilitate the creation of a more holistic perspective
-              on microservice deployments.
+  <!-- Our Domain Component -->
+  <!-- <section class="section-body section-3 h-100">
+    <header class="container h-100">
+      <div class="d-flex align-items-center justify-content-center h-100">
+        <div class="d-flex flex-column text-center">
+          <p class="heading-2">Our Domain</p>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item section-2 accordion-section">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed accordion-header-section" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                  aria-controls="flush-collapseOne">
+                  Background
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  The apparent need for improved microservice governance
+                  modeling strategies, along with some of the prevalent issues
+                  in current microservice governance methodologies, have been
+                  highlighted in several publications throughout the years. In
+                  this regard, a key focus of such publications has been the
+                  need for holistic modeling strategies that capture recent
+                  advances in deployment technology as well as addressing
+                  issues pertaining to the inability of monitoring frameworks
+                  to effectively capture microservice performance metrics.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item section-2 accordion-section">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed accordion-header-section" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                  aria-controls="flush-collapseTwo">
+                  Research Gap
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  The need for new modeling strategies that facilitate the
+                  creation of holistic microservice governance policies
+                  through the incorporation of effective and efficient use of
+                  monitoring solutions.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item section-2 accordion-section">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed accordion-header-section" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                  aria-controls="flush-collapseThree">
+                  Research Problems
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>
+                    Currently, the only way in which developers and system
+                    administrators can effectively evaluate the effectiveness
+                    of their Kubernetes deployments is through the use of a
+                    wide variety of monitoring solutions provided via
+                    Application Performance Management (APM) tools.
+                  </p>
+                  <p>
+                    Currently, the only way in which developers and system
+                    administrators can effectively evaluate the effectiveness
+                    of their Kubernetes deployments is through the use of a
+                    wide variety of monitoring solutions provided via
+                    Application Performance Management (APM) tools.
+                  </p>
+                  <p>
+                    Currently, the only way in which developers and system
+                    administrators can effectively evaluate the effectiveness
+                    of their Kubernetes deployments is through the use of a
+                    wide variety of monitoring solutions provided via
+                    Application Performance Management (APM) tools.
+                  </p>
+                  <p>
+                    Currently, the only way in which developers and system
+                    administrators can effectively evaluate the effectiveness
+                    of their Kubernetes deployments is through the use of a
+                    wide variety of monitoring solutions provided via
+                    Application Performance Management (APM) tools.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item section-2 accordion-section">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed accordion-header-section" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                  aria-controls="flush-collapseFour">
+                  Research Objectives
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>
+                    Currently, the only way in which developers and system
+                    administrators can effectively evaluate the effectiveness
+                    of their Kubernetes deployments is through the use of a
+                    wide variety of monitoring solutions provided via
+                    Application Performance Management (APM) tools.
+                  </p>
+                  <p>
+                    Currently, the only way in which developers and system
+                    administrators can effectively evaluate the effectiveness
+                    of their Kubernetes deployments is through the use of a
+                    wide variety of monitoring solutions provided via
+                    Application Performance Management (APM) tools.
+                  </p>
+                  <p>
+                    Currently, the only way in which developers and system
+                    administrators can effectively evaluate the effectiveness
+                    of their Kubernetes deployments is through the use of a
+                    wide variety of monitoring solutions provided via
+                    Application Performance Management (APM) tools.
+                  </p>
+                  <p>
+                    Currently, the only way in which developers and system
+                    administrators can effectively evaluate the effectiveness
+                    of their Kubernetes deployments is through the use of a
+                    wide variety of monitoring solutions provided via
+                    Application Performance Management (APM) tools.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section> -->
+
+  <!-- Milestones Component -->
+  <section class="section-body-3 section-2">
+    <header class="container">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="d-flex flex-column text-center">
+          <p class="heading-2">Milestones</p>
+          <div class="container">
+            <div class="main-timeline">
+              <!-- start Project Topic Assessment section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">December</span>
+                      <span class="year">2021</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Project Topic Assessment ( No marks allocated )
+                  </h5>
+                  <p class="description">
+                    Initial topic assessment document of the proposed research
+                    was submitted for evaluation. The submitted document
+                    included a brief overview on key aspects of the proposed
+                    research along with the research problem, research
+                    objectives, overall solution as well as member task
+                    breakdown.
+                  </p>
+                </div>
+              </div>
+              <!-- end Project Topic Assessment section-->
+
+              <!-- start Project Charter Submission section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">January</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Project Charter Submission ( No marks allocated )
+                  </h5>
+                  <p class="description">
+                    Once the topic was finalized, the project charter document
+                    was submitted for evaluation. This document also included
+                    a brief overview on key aspects of the proposed research
+                    along with the research problem, research objectives,
+                    overall solution as well as member task breakdown of the
+                    proposed research.
+                  </p>
+                </div>
+              </div>
+              <!-- end Project Charter Submission section-->
+
+              <!-- start Project Proposal Presentation section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">February</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Project Proposal Presentation ( Marks Allocation - 5% )
+                  </h5>
+                  <p class="description">
+                    Presented to a panel of judges in order to provide an
+                    overview of the proposed research.
+                  </p>
+                </div>
+              </div>
+              <!-- end Project Proposal Presentation section-->
+
+              <!-- start Project Proposal Report section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">February</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Project Proposal Report ( Marks Allocation - 5% )
+                  </h5>
+                  <p class="description">
+                    The submission of a report which provides an in-depth
+                    analysis pertaining to key aspects of the proposed
+                    research along with the research problem, objectives, as
+                    well as the overall proposed solution.
+                  </p>
+                </div>
+              </div>
+              <!-- end Project Proposal Report section-->
+
+              <!-- start Status Document 1 section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">May</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Status Document 1 ( Marks Allocation - 1% )
+                  </h5>
+                  <p class="description">
+                    The submission of a document that provides an overview of key tasks conducted by members during the
+                    implementation phase of the research.
+                  </p>
+                </div>
+              </div>
+              <!-- end Status Document 1 section-->
+
+              <!-- start Progress Presentation 1 section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">May</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Progress Presentation 1 ( Marks Allocation - 10% )
+                  </h5>
+                  <p class="description">
+                    Evaluation of 50% completion of the proposed solution by a panel of judges.
+                  </p>
+                </div>
+              </div>
+              <!-- end Progress Presentation 1 section-->
+
+              <!-- start Research Paper draft submission section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">June</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Research Paper draft submission ( Marks Allocation - 1% )
+                  </h5>
+                  <p class="description">
+                    Draft submission of the research paper submitted to the supervisor for evaluation.
+                  </p>
+                </div>
+              </div>
+              <!-- end Research Paper draft submission section-->
+              <!-- start Final Thesis Submission section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">September</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Final Thesis Submission ( Marks Allocation - 10% )
+                  </h5>
+                  <p class="description">
+                    Submission of the group and individual thesis documents for evaluation.
+                  </p>
+                </div>
+              </div>
+              <!-- end Final Thesis Submission section-->
+              <!-- start Progress Presentation 2 section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">October</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Progress Presentation 2 ( Marks Allocation - 1% )
+                  </h5>
+                  <p class="description">
+                    Draft submission of the research paper submitted to the supervisor for evaluation.
+                  </p>
+                </div>
+              </div>
+              <!-- end Progress Presentation 2 section-->
+              <!-- start Final Thesis Submission section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">November</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Website Assessment ( Marks Allocation - 10% )
+                  </h5>
+                  <p class="description">
+                    Submission of research website for evaluation.
+                  </p>
+                </div>
+              </div>
+              <!-- end Final Thesis Submission section-->
+              <!-- start Progress Presentation 2 section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">October</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Log Book and Status Document 2 ( Marks Allocation - 1% )
+                  </h5>
+                  <p class="description">
+                    Submission of the research logbook and status document 2 which provides an overview of all key tasks
+                    conducted by members during the implementation phase of the research.
+                  </p>
+                </div>
+              </div>
+              <!-- end Progress Presentation 2 section-->
+              <!-- start Final Presentation and Viva section-->
+              <div class="timeline">
+                <div class="icon"></div>
+                <div class="date-content">
+                  <div class="date-outer">
+                    <span class="date">
+                      <span class="month">November</span>
+                      <span class="year">2022</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h5 class="title">
+                    Final Presentation and Viva ( Marks Allocation - 10% )
+                  </h5>
+                  <p class="description">
+                    Final evaluation of the completed product.
+                  </p>
+                </div>
+              </div>
+              <!-- end Final Presentation and Viva section-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- What do we provide Component -->
+  <section class="section-body section-3 h-100">
+    <header class="container h-100">
+      <div class="d-flex align-items-center justify-content-center h-100">
+        <div class="d-flex flex-column text-center">
+          <p class="heading-2">What do we provide?</p>
+          <div class="row">
+            <!--Fast Provider-->
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Fast Provider</h5>
+                  <br />
+                  <i class="fa-solid fa-server fa-2xl"></i>
+                  <br /><br />
+                  <p class="card-text">
+                    Develop a software system that use local machine network to automate the container management
+                    workloads and use lazy loading mechanism to transfer container images to the Kubernetes cluster​
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Matrics Server-->
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Matrics Server</h5>
+                  <br />
+                  <i class="fa-sharp fa-solid fa-database fa-2xl"></i>
+                  <br /><br />
+                  <p class="card-text">
+                    Fetch cluster series data from kubernetes cluster recursively and then get the optimal solution from
+                    the optimization tool.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Prediction​ Modal-->
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Prediction​ Modal</h5>
+                  <br />
+                  <i class="fa-solid fa-brain-circuit fa-2xl"></i>
+                  <br /><br />
+                  <p class="card-text">
+                    Ability to dynamically scale the cluster based on the prediction​
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Resiliency Management-->
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Resiliency Management</h5>
+                  <br />
+                  <i class="fa-solid fa-monitor-waveform fa-2xl"></i>
+                  <br /><br />
+                  <p class="card-text">
+                    monitoring server which gathers system data and provide a resilience management tool to handle the
+                    system failures
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- Documents Component -->
+  <section class="section-2 section-body-3">
+    <header class="container">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="d-flex flex-column text-center">
+          <p class="heading-2">Documents</p>
+          <!--Project Proposals-->
+          <div class="row">
+            <p class="sub-heading-3">Project Proposal</p>
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Proposal Presentation</h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Proposal Document - Team</h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Proposal Document - IT19132310</h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Proposal Document - IT19139036</h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Proposal Document - IT19104218</h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Proposal Document - IT19120980</h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Status Documents 01-->
+          <div class="row">
+            <p class="sub-heading-3">Status Document 01</p>
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">IT19132310</h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">IT19139036</h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">IT19104218</h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">IT19120980</h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Progress Presentation 01-->
+          <div class="row">
+            <p class="sub-heading-3">Progress Presentation 01
+
             </p>
-          </div>
-        </div>
-      </header>
-    </section>
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Progress Presentation
 
-    <!-- Our Domain Component -->
-    <section class="section-body section-3 h-100">
-      <header class="container h-100">
-        <div class="d-flex align-items-center justify-content-center h-100">
-          <div class="d-flex flex-column text-center">
-            <p class="heading-2">Our Domain</p>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item section-2 accordion-section">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button
-                    class="accordion-button collapsed accordion-header-section"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
-                  >
-                    Background
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseOne"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    The apparent need for improved microservice governance
-                    modeling strategies, along with some of the prevalent issues
-                    in current microservice governance methodologies, have been
-                    highlighted in several publications throughout the years. In
-                    this regard, a key focus of such publications has been the
-                    need for holistic modeling strategies that capture recent
-                    advances in deployment technology as well as addressing
-                    issues pertaining to the inability of monitoring frameworks
-                    to effectively capture microservice performance metrics.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item section-2 accordion-section">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button
-                    class="accordion-button collapsed accordion-header-section"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseTwo"
-                  >
-                    Research Gap
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    The need for new modeling strategies that facilitate the
-                    creation of holistic microservice governance policies
-                    through the incorporation of effective and efficient use of
-                    monitoring solutions.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item section-2 accordion-section">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button
-                    class="accordion-button collapsed accordion-header-section"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseThree"
-                  >
-                    Research Problems
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Currently, the only way in which developers and system
-                      administrators can effectively evaluate the effectiveness
-                      of their Kubernetes deployments is through the use of a
-                      wide variety of monitoring solutions provided via
-                      Application Performance Management (APM) tools.
-                    </p>
-                    <p>
-                      Currently, the only way in which developers and system
-                      administrators can effectively evaluate the effectiveness
-                      of their Kubernetes deployments is through the use of a
-                      wide variety of monitoring solutions provided via
-                      Application Performance Management (APM) tools.
-                    </p>
-                    <p>
-                      Currently, the only way in which developers and system
-                      administrators can effectively evaluate the effectiveness
-                      of their Kubernetes deployments is through the use of a
-                      wide variety of monitoring solutions provided via
-                      Application Performance Management (APM) tools.
-                    </p>
-                    <p>
-                      Currently, the only way in which developers and system
-                      administrators can effectively evaluate the effectiveness
-                      of their Kubernetes deployments is through the use of a
-                      wide variety of monitoring solutions provided via
-                      Application Performance Management (APM) tools.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item section-2 accordion-section">
-                <h2 class="accordion-header" id="flush-headingFour">
-                  <button
-                    class="accordion-button collapsed accordion-header-section"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFour"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseFour"
-                  >
-                    Research Objectives
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingFour"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Currently, the only way in which developers and system
-                      administrators can effectively evaluate the effectiveness
-                      of their Kubernetes deployments is through the use of a
-                      wide variety of monitoring solutions provided via
-                      Application Performance Management (APM) tools.
-                    </p>
-                    <p>
-                      Currently, the only way in which developers and system
-                      administrators can effectively evaluate the effectiveness
-                      of their Kubernetes deployments is through the use of a
-                      wide variety of monitoring solutions provided via
-                      Application Performance Management (APM) tools.
-                    </p>
-                    <p>
-                      Currently, the only way in which developers and system
-                      administrators can effectively evaluate the effectiveness
-                      of their Kubernetes deployments is through the use of a
-                      wide variety of monitoring solutions provided via
-                      Application Performance Management (APM) tools.
-                    </p>
-                    <p>
-                      Currently, the only way in which developers and system
-                      administrators can effectively evaluate the effectiveness
-                      of their Kubernetes deployments is through the use of a
-                      wide variety of monitoring solutions provided via
-                      Application Performance Management (APM) tools.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </section>
-
-    <!-- Milestones Component -->
-    <section class="section-body-2 section-2 h-300">
-      <header class="container h-300">
-        <div class="d-flex align-items-center justify-content-center h-300">
-          <div class="d-flex flex-column text-center">
-            <p class="heading-2">Milestones</p>
-            <div class="container">
-              <div class="main-timeline">
-                <!-- start experience section-->
-                <div class="timeline">
-                  <div class="icon"></div>
-                  <div class="date-content">
-                    <div class="date-outer">
-                      <span class="date">
-                        <span class="month">2 Years</span>
-                        <span class="year">2013</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="timeline-content">
-                    <h5 class="title">
-                      Project Topic Assessment ( No marks allocated )
-                    </h5>
-                    <p class="description">
-                      Initial topic assessment document of the proposed research
-                      was submitted for evaluation. The submitted document
-                      included a brief overview on key aspects of the proposed
-                      research along with the research problem, research
-                      objectives, overall solution as well as member task
-                      breakdown.
-                    </p>
-                  </div>
-                </div>
-                <!-- end experience section-->
-
-                <!-- start experience section-->
-                <div class="timeline">
-                  <div class="icon"></div>
-                  <div class="date-content">
-                    <div class="date-outer">
-                      <span class="date">
-                        <span class="month">1 Years</span>
-                        <span class="year">2015</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="timeline-content">
-                    <h5 class="title">
-                      Project Charter Submission ( No marks allocated )
-                    </h5>
-                    <p class="description">
-                      Once the topic was finalized, the project charter document
-                      was submitted for evaluation. This document also included
-                      a brief overview on key aspects of the proposed research
-                      along with the research problem, research objectives,
-                      overall solution as well as member task breakdown of the
-                      proposed research.
-                    </p>
-                  </div>
-                </div>
-                <!-- end experience section-->
-
-                <!-- start experience section-->
-                <div class="timeline">
-                  <div class="icon"></div>
-                  <div class="date-content">
-                    <div class="date-outer">
-                      <span class="date">
-                        <span class="month">2 Years</span>
-                        <span class="year">2016</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="timeline-content">
-                    <h5 class="title">
-                      Project Proposal Presentation ( Marks Allocation - 5% )
-                    </h5>
-                    <p class="description">
-                      Presented to a panel of judges in order to provide an
-                      overview of the proposed research.
-                    </p>
-                  </div>
-                </div>
-                <!-- end experience section-->
-
-                <!-- start experience section-->
-                <div class="timeline">
-                  <div class="icon"></div>
-                  <div class="date-content">
-                    <div class="date-outer">
-                      <span class="date">
-                        <span class="month">2 Years</span>
-                        <span class="year">2018</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="timeline-content">
-                    <h5 class="title">
-                      Project Proposal Report ( Marks Allocation - 5% )
-                    </h5>
-                    <p class="description">
-                      The submission of a report which provides an in-depth
-                      analysis pertaining to key aspects of the proposed
-                      research along with the research problem, objectives, as
-                      well as the overall proposed solution.
-                    </p>
-                  </div>
-                </div>
-                <!-- end experience section-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </section>
-
-    <!-- What do we provide Component -->
-    <section class="section-body section-3 h-100">
-      <header class="container h-100">
-        <div class="d-flex align-items-center justify-content-center h-100">
-          <div class="d-flex flex-column text-center">
-            <p class="heading-2">What do we provide?</p>
-            <div class="row">
-              <!--Fast Provider-->
-              <div class="col-4">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">Fast Provider</h5>
-                    <br />
-                    <i class="fa-solid fa-server fa-2xl"></i>
-                    <br /><br />
-                    <p class="card-text">
-                      Check what are the highly dependent services, and evaluate
-                      the quantified dependency.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--Fast Provider-->
-              <div class="col-4">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">Fast Provider</h5>
-                    <br />
-                    <i class="fa-solid fa-server fa-2xl"></i>
-                    <br /><br />
-                    <p class="card-text">
-                      Check what are the highly dependent services, and evaluate
-                      the quantified dependency.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--Fast Provider-->
-              <div class="col-4">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">Fast Provider</h5>
-                    <br />
-                    <i class="fa-solid fa-server fa-2xl"></i>
-                    <br /><br />
-                    <p class="card-text">
-                      Check what are the highly dependent services, and evaluate
-                      the quantified dependency.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </section>
-
-    <!-- Documents Component -->
-    <section class="section-2 section-body-3">
-      <header class="container">
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="d-flex flex-column text-center">
-            <p class="heading-2">Documents</p>
-            <!--Project Proposals-->
-            <div class="row">
-              <p class="sub-heading-3">Project Proposal</p>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Status Documents 01-->
-            <div class="row">
-              <p class="sub-heading-3">Project Proposal</p>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Progress Presentation-->
-            <div class="row">
-              <p class="sub-heading-3">Project Proposal</p>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
+                  </h5>
+                  <br />
+                  <i class="fa-solid fa-file-pdf fa-5x"></i>
+                  <br /><br />
+                  <button class="btn btn-light">DOWNLOAD</button>
                 </div>
               </div>
             </div>
             <!--Research Paper -->
             <div class="row">
-              <p class="sub-heading-3">Project Proposal</p>
-              <div class="col-3 p-3">
+              <p class="sub-heading-3">Research Paper</p>
+              <div class="col-sm-12 col-md-4 col-lg-3 p-3">
                 <div class="card card-section">
                   <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
+                    <h5 class="card-title">Research Paper
+
+                    </h5>
                     <br />
                     <i class="fa-solid fa-file-pdf fa-5x"></i>
                     <br /><br />
@@ -694,467 +749,418 @@
                 </div>
               </div>
 
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Progress Presentation 02-->
-            <div class="row">
-              <p class="sub-heading-3">Project Proposal</p>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
 
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
+              <!--Progress Presentation 02-->
+              <div class="row">
+                <p class="sub-heading-3">Progress Presentation 02</p>
+                <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+                  <div class="card card-section">
+                    <div class="card-body">
+                      <h5 class="card-title">Progress Presentation 02</h5>
+                      <br />
+                      <i class="fa-solid fa-file-pdf fa-5x"></i>
+                      <br /><br />
+                      <button class="btn btn-light">DOWNLOAD</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Final Reports-->
-            <div class="row">
-              <p class="sub-heading-3">Project Proposal</p>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
 
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
+                <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+                  <div class="card card-section">
+                    <div class="card-body">
+                      <h5 class="card-title">Poster</h5>
+                      <br />
+                      <i class="fa-solid fa-file-pdf fa-5x"></i>
+                      <br /><br />
+                      <button class="btn btn-light">DOWNLOAD</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
+              <!--Final Reports-->
+              <div class="row">
+                <p class="sub-heading-3">Final Reports </p>
+                <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+                  <div class="card card-section">
+                    <div class="card-body">
+                      <h5 class="card-title">Final Report - Team </h5>
+                      <br />
+                      <i class="fa-solid fa-file-pdf fa-5x"></i>
+                      <br /><br />
+                      <button class="btn btn-light">DOWNLOAD</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Project Registration Documents-->
-            <div class="row">
-              <p class="sub-heading-3">Project Proposal</p>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
 
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
+                <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+                  <div class="card card-section">
+                    <div class="card-body">
+                      <h5 class="card-title">Final Report - IT19132310</h5>
+                      <br />
+                      <i class="fa-solid fa-file-pdf fa-5x"></i>
+                      <br /><br />
+                      <button class="btn btn-light">DOWNLOAD</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+                  <div class="card card-section">
+                    <div class="card-body">
+                      <h5 class="card-title">Final Report - IT19139036</h5>
+                      <br />
+                      <i class="fa-solid fa-file-pdf fa-5x"></i>
+                      <br /><br />
+                      <button class="btn btn-light">DOWNLOAD</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+                  <div class="card card-section">
+                    <div class="card-body">
+                      <h5 class="card-title">Final Report - IT19104218</h5>
+                      <br />
+                      <i class="fa-solid fa-file-pdf fa-5x"></i>
+                      <br /><br />
+                      <button class="btn btn-light">DOWNLOAD</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+                  <div class="card card-section">
+                    <div class="card-body">
+                      <h5 class="card-title">Final Report - IT19120980</h5>
+                      <br />
+                      <i class="fa-solid fa-file-pdf fa-5x"></i>
+                      <br /><br />
+                      <button class="btn btn-light">DOWNLOAD</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-3">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">IT19139036</h5>
-                    <br />
-                    <i class="fa-solid fa-file-pdf fa-5x"></i>
-                    <br /><br />
-                    <button class="btn btn-light">DOWNLOAD</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </section>
+              <!--Project Registration Documents-->
+              <div class="row">
+                <p class="sub-heading-3">Project Registration Documents</p>
+                <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+                  <div class="card card-section">
+                    <div class="card-body">
+                      <h5 class="card-title">Topic Assessment
 
-    <!--Tools and Technologies Component -->
-    <section class="section-body section-3 h-100">
-      <header class="container h-100">
-        <div class="d-flex align-items-center justify-content-center h-100">
-          <div class="d-flex flex-column text-center">
-            <p class="heading-2">Tools and Technologies</p>
-            <div class="row">
-              <!--Fast Provider-->
-              <div class="col-4">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">Fast Provider</h5>
-                    <br />
-                    <i class="fa-solid fa-server fa-2xl"></i>
-                    <br /><br />
-                    <p class="card-text">
-                      Check what are the highly dependent services, and evaluate
-                      the quantified dependency.
-                    </p>
+                      </h5>
+                      <br />
+                      <i class="fa-solid fa-file-pdf fa-5x"></i>
+                      <br /><br />
+                      <button class="btn btn-light">DOWNLOAD</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!--Fast Provider-->
-              <div class="col-4">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">Fast Provider</h5>
-                    <br />
-                    <i class="fa-solid fa-server fa-2xl"></i>
-                    <br /><br />
-                    <p class="card-text">
-                      Check what are the highly dependent services, and evaluate
-                      the quantified dependency.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--Fast Provider-->
-              <div class="col-4">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">Fast Provider</h5>
-                    <br />
-                    <i class="fa-solid fa-server fa-2xl"></i>
-                    <br /><br />
-                    <p class="card-text">
-                      Check what are the highly dependent services, and evaluate
-                      the quantified dependency.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </section>
 
-    <!--Achievements Component -->
-    <section class="section-body section-3 h-100">
-      <header class="container h-100">
-        <div class="d-flex align-items-center justify-content-center h-100">
-          <div class="d-flex flex-column text-center">
-            <p class="heading-2">Achievements</p>
-            <div class="row">
-              <!--ICCNT-->
-              <div class="col-12">
-                <div class="card card-section">
-                  <div class="card-body">
-                    <h5 class="card-title">Fast Provider</h5>
-                    <br />
-                    <i class="fa-solid fa-server fa-2xl"></i>
-                    <br /><br />
-                    <p class="card-text">
-                      Check what are the highly dependent services, and evaluate
-                      the quantified dependency.
-                    </p>
+                <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+                  <div class="card card-section">
+                    <div class="card-body">
+                      <h5 class="card-title">Project Cover Sheet</h5>
+                      <br />
+                      <i class="fa-solid fa-file-pdf fa-5x"></i>
+                      <br /><br />
+                      <button class="btn btn-light">DOWNLOAD</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </section>
+                <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+                  <div class="card card-section">
+                    <div class="card-body">
+                      <h5 class="card-title">Project Charter Document
 
-        <!--Team Component -->
-        <section class="section-body section-3 h-100">
-          <header class="container h-100">
-            <div class="d-flex align-items-center justify-content-center h-100">
-              <div class="d-flex flex-column text-center">
-                <p class="heading-2">Team</p>
-                <div class="row">
-                  <!--Udara Sir-->
-                  <div class="col-12">
-                    <div class="card card-section">
-                      <div class="card-body">
-                        <h5 class="card-title">Udara Sir</h5>
-                        <br />
-                        <i class="fa-solid fa-server fa-2xl"></i>
-                        <br /><br />
-                        <p class="card-text">
-                          Check what are the highly dependent services, and evaluate
-                          the quantified dependency.
-                        </p>
-                      </div>
+                      </h5>
+                      <br />
+                      <i class="fa-solid fa-file-pdf fa-5x"></i>
+                      <br /><br />
+                      <button class="btn btn-light">DOWNLOAD</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </header>
-        </section>
+          </div>
+    </header>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="w-100 py-4 flex-shrink-0">
-      <div class="container py-4">
-        <div class="row gy-4 gx-5">
-          <div class="col-lg-4 col-md-6">
-            <h5 class="h1 text-white">FB.</h5>
-            <p class="small text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt.
-            </p>
-            <p class="small text-muted mb-0">
-              &copy; Copyrights. All rights reserved.
-              <a class="text-primary" href="#">Bootstrapious.com</a>
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <h5 class="text-white mb-3">Quick links</h5>
-            <ul class="list-unstyled text-muted">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Get started</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <h5 class="text-white mb-3">Quick links</h5>
-            <ul class="list-unstyled text-muted">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Get started</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <h5 class="text-white mb-3">Newsletter</h5>
-            <p class="small text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt.
-            </p>
-            <form action="#">
-              <div class="input-group mb-3">
-                <input
-                  class="form-control"
-                  type="text"
-                  placeholder="Recipient's username"
-                  aria-label="Recipient's username"
-                  aria-describedby="button-addon2"
-                />
-                <button
-                  class="btn btn-primary"
-                  id="button-addon2"
-                  type="button"
-                >
-                  <i class="fas fa-paper-plane"></i>
-                </button>
+  <!--Tools and Technologies Component -->
+  <section class="section-body section-3 h-100">
+    <header class="container h-100">
+      <div class="d-flex align-items-center justify-content-center h-100">
+        <div class="d-flex flex-column text-center">
+          <p class="heading-2">Tools and Technologies</p>
+          <div class="row">
+            <!--React-->
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">React</h5>
+                  <br />
+                  <i class="fa-brands fa-react fa-5x"></i>
+                  <br /><br />
+                </div>
               </div>
-            </form>
+            </div>
+            <!--Node JS-->
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Node JS</h5>
+                  <br />
+                  <i class="fa-brands fa-node fa-5x"></i>
+                  <br /><br />
+                </div>
+              </div>
+            </div>
+            <!--Python-->
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Python</h5>
+                  <br />
+                  <i class="fa-brands fa-python fa-5x"></i>
+                  <br /><br />
+                </div>
+              </div>
+            </div>
+            <!--Docker-->
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Docker</h5>
+                  <br />
+                  <i class="fa-brands fa-docker fa-5x"></i>
+                  <br /><br />
+                </div>
+              </div>
+            </div>
+            <!--Azure-->
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Azure</h5>
+                  <br />
+                  <i class="fa-solid fa-cloud fa-5x"></i>
+                  <br /><br />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </header>
+  </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!--Achievements Component -->
+  <section class="section-body section-2 h-100">
+    <header class="container h-100">
+      <div class="d-flex align-items-center justify-content-center h-100">
+        <div class="d-flex flex-column text-center">
+          <p class="heading-2">Achievements</p>
+          <div class="row">
+            <!--13th ICCCNT 2022-->
+            <div class="col-12">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h2 class="card-title">13th ICCCNT 2022</h2>
+                  <br />
+                  <i class="fa-sharp fa-solid fa-trophy fa-5x"></i>
+                  <br /><br />
+                  <p class="card-text">
+                    Our team presented the research paper at the 13th
+                    International Conference on Computing, Communication and
+                    Networking Technologies (ICCCNT) 2022 ( h5-index :27 )
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!--Team Component -->
+  <section class="section-body-3 section-3">
+    <header class="container">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="d-flex flex-column text-center">
+          <p class="heading-2">Team</p>
+          <div class="row">
+            <!--Udara Samaratunge-->
+            <div class="col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Udara Samaratunge</h5>
+                  <br />
+                  <img src="./Images/Team/Udara.jpg" class="team-member-image img-fluid rounded" />
+                  <br /><br />
+                  <a href="https://www.facebook.com/udara.samaratunge" class="social-icons"><i
+                      class="fa-brands fa-square-facebook fa-2x"></i></a>
+                  <a href="" class="social-icons"><i class="fa-brands fa-square-github fa-2x"></i></a>
+
+                  <a href="https://www.linkedin.com/in/udarasamaratunge/" class="social-icons"><i
+                      class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--Dharshana Kasthurirathna-->
+            <div class="col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Dharshana Kasthurirathna</h5>
+                  <br />
+                  <img src="./Images/Team/Darshana.jpg" class="team-member-image img-fluid rounded" />
+                  <br /><br />
+                  <a href="https://www.facebook.com/dkasthurirathna" class="social-icons"><i
+                      class="fa-brands fa-square-facebook fa-2x"></i></a>
+                  <a href="" class="social-icons"><i class="fa-brands fa-square-github fa-2x"></i></a>
+
+                  <a href="https://www.linkedin.com/in/dharshana-kasthurirathna-a4a3275/" class="social-icons"><i
+                      class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--Lasal Hettiarachchi-->
+            <div class="col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Lasal Hettiarachchi</h5>
+                  <br />
+                  <img src="./Images/Team/Lasal.jpg" class="team-member-image img-fluid rounded" />
+                  <br /><br />
+                  <a href="https://www.facebook.com/lasalsandeepahettiarachchi" class="social-icons"><i
+                      class="fa-brands fa-square-facebook fa-2x"></i></a>
+                  <a href="https://github.com/CandyPanda-LS" class="social-icons"><i
+                      class="fa-brands fa-square-github fa-2x"></i></a>
+
+                  <a href="https://www.linkedin.com/in/lasal-hettiarachchi-b75643193/" class="social-icons"><i
+                      class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--Senura Jayadeva-->
+            <div class="col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Senura Jayadeva</h5>
+                  <br />
+                  <img src="./Images/Team/Senura.jpg" class="team-member-image img-fluid rounded" />
+                  <br /><br />
+                  <a href="https://www.facebook.com/senura.vihan/" class="social-icons"><i
+                      class="fa-brands fa-square-facebook fa-2x"></i></a>
+                  <a href="https://github.com/senuravihanjayadeva" class="social-icons"><i
+                      class="fa-brands fa-square-github fa-2x"></i></a>
+
+                  <a href="https://www.linkedin.com/in/senura-vihan-jayadeva-7860b41a6/" class="social-icons"><i
+                      class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--Rusiru Abhisheak-->
+            <div class="col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Rusiru Abhisheak</h5>
+                  <br />
+                  <img src="./Images/Team/Rusiru.jpg" class="team-member-image img-fluid rounded" />
+                  <br /><br />
+                  <a href="https://www.facebook.com/rusiruabhisheak" class="social-icons"><i
+                      class="fa-brands fa-square-facebook fa-2x"></i></a>
+                  <a href="https://github.com/rusiruavb" class="social-icons"><i
+                      class="fa-brands fa-square-github fa-2x"></i></a>
+
+                  <a href="https://www.linkedin.com/in/rusiru-abhisheak/" class="social-icons"><i
+                      class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--Dilmi Palliyaguruge-->
+            <div class="col-lg-3 p-3">
+              <div class="card card-section">
+                <div class="card-body">
+                  <h5 class="card-title">Dilmi Palliyaguruge</h5>
+                  <br />
+                  <img src="./Images/Team/Dilmi.jpg" class="team-member-image img-fluid rounded" />
+                  <br /><br />
+                  <a href="https://www.facebook.com/profile.php?id=100012033513168" class="social-icons"><i
+                      class="fa-brands fa-square-facebook fa-2x"></i></a>
+                  <a href="https://github.com/Dilmi101" class="social-icons"><i
+                      class="fa-brands fa-square-github fa-2x"></i></a>
+
+                  <a href="https://www.linkedin.com/in/dilmi-palliyaguruge-334109178/" class="social-icons"><i
+                      class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="w-100 py-4 flex-shrink-0">
+    <div class="container py-4">
+      <div class="row gy-4 gx-5">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="h1 text-white">FB.</h5>
+          <p class="small text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+          <p class="small text-muted mb-0">
+            &copy; Copyrights. All rights reserved.
+            <a class="text-primary" href="#">Bootstrapious.com</a>
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="text-white mb-3">Quick links</h5>
+          <ul class="list-unstyled text-muted">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Get started</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="text-white mb-3">Quick links</h5>
+          <ul class="list-unstyled text-muted">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Get started</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="text-white mb-3">Newsletter</h5>
+          <p class="small text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+          <form action="#">
+            <div class="input-group mb-3">
+              <input class="form-control" type="text" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="button-addon2" />
+              <button class="btn btn-primary" id="button-addon2" type="button">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
