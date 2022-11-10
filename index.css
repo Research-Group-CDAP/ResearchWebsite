@@ -12,6 +12,21 @@
   color: blanchedalmond;
 }
 
+.section-top-bottom{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title-top-bottom{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.accordion-row{
+  width: 85vw;
+  background-color: #171616;
+}
+
 @media (min-width: 576px) {
   .heading {
     font-size: 100px;
@@ -73,13 +88,13 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .accordion-section {
-    width: 800px;
+    width: auto;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .accordion-section {
-    width: 1200px;
+    width: auto;
   }
 }

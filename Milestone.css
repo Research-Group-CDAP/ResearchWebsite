@@ -130,6 +130,10 @@
     left: -6px
 }
 
+.month{
+    color: #232323;
+}
+
 .main-timeline .date {
     width: 100%;
     margin: auto;
