@@ -3,21 +3,23 @@
   height: 100vh;
 }
 
-.section-body-2{
+.section-body-2 {
   color: blanchedalmond;
   height: 150vh;
 }
 
-.section-body-3{
+.section-body-3 {
   color: blanchedalmond;
 }
 
-.heading {
-  font-size: 100px;
-}
+@media (min-width: 576px) {
+  .heading {
+    font-size: 100px;
+  }
 
-.heading-2 {
-  font-size: 75px;
+  .heading-2 {
+    font-size: 75px;
+  }
 }
 
 .sub-heading {
@@ -40,17 +42,17 @@
   background-color: #2a2e32;
 }
 
-.accordion-header-section{
-    background-color: #171616;
-    color: #ffffff;
+.accordion-header-section {
+  background-color: #171616;
+  color: #ffffff;
 }
 
-.card-section{
+.card-section {
   background-color: #242424;
-    color: #ffffff;
+  color: #ffffff;
 }
 
-.social-icons{
+.social-icons {
   margin: 0px 3px;
 }
 
