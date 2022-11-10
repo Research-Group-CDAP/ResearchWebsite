@@ -20,7 +20,7 @@
 
 <body>
   <!-- Navbar Component -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">KubeMate</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -33,28 +33,25 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Introduction</a>
+            <a class="nav-link" href="#Introduction">Introduction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Domain</a>
+            <a class="nav-link" href="#Domain">Domain</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Milestones</a>
+            <a class="nav-link" href="#Milestones">Milestones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#Documents">Documents</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Documents</a>
+            <a class="nav-link" href="#Tools">Tools and Technologies</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tools and Technologies</a>
+            <a class="nav-link" href="#Achievements">Achievements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Achievements</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Team</a>
+            <a class="nav-link" href="#Team">Team</a>
           </li>
         </ul>
       </div>
@@ -62,20 +59,23 @@
   </nav>
 
   <!-- Section One Component -->
-  <div class="section-body container">
-    <div class="row h-100 justify-content-center align-items-center">
-      <div class="text-center">
-        <p class="display-1 fw-bolder">KubeMate</p>
-        <p class="display-6">
-          ARTIFICIAL INTELLIGENCE BASED CENTRALIZED RESOURCE MANAGEMENT
-          APPLICATION FOR DISTRIBUTED SYSTEMS
-        </p>
+  <section id="Home">
+    <div class="section-body container">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="text-center">
+          <p class="display-1 fw-bolder">KubeMate</p>
+          <p class="display-6">
+            ARTIFICIAL INTELLIGENCE BASED CENTRALIZED RESOURCE MANAGEMENT
+            APPLICATION FOR DISTRIBUTED SYSTEMS
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- Section Two Component -->
-  <section class="section-body section-2 h-100">
+  <section id="Introduction" class="section-body section-2 h-100">
     <header class="container h-100">
       <div class="d-flex align-items-center justify-content-center h-100">
         <div class="d-flex flex-column text-center">
@@ -90,7 +90,7 @@
   </section>
 
   <!-- Our Domain Component -->
-  <section class="section-body-3 section-3 section-top-bottom">
+  <section id="Domain" class="section-body-3 section-3 section-top-bottom">
     <header class="container">
       <div class="d-flex align-items-center justify-content-center">
         <div class="d-flex flex-column text-center">
@@ -214,7 +214,7 @@
   </section>
 
   <!-- Milestones Component -->
-  <section class="section-body-3 section-2 section-top-bottom">
+  <section id="Milestones" class="section-body-3 section-2 section-top-bottom">
     <header class="container">
       <div class="d-flex align-items-center justify-content-center">
         <div class="d-flex flex-column text-center">
@@ -510,7 +510,7 @@
           <p class="display-2 fw-bolder title-top-bottom">What do we provide?</p>
           <div class="row">
             <!--Fast Provider-->
-            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3 d-flex align-items-stretch">
               <div class="card card-section">
                 <div class="card-body">
                   <h5 class="card-title">Fast Provider</h5>
@@ -525,7 +525,7 @@
               </div>
             </div>
             <!--Matrics Server-->
-            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3 d-flex align-items-stretch">
               <div class="card card-section">
                 <div class="card-body">
                   <h5 class="card-title">Matrics Server</h5>
@@ -540,7 +540,7 @@
               </div>
             </div>
             <!--Prediction​ Modal-->
-            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3 d-flex align-items-stretch">
               <div class="card card-section">
                 <div class="card-body">
                   <h5 class="card-title">Prediction​ Modal</h5>
@@ -554,7 +554,7 @@
               </div>
             </div>
             <!--Resiliency Management-->
-            <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+            <div class="col-sm-12 col-md-4 col-lg-3 p-3 d-flex align-items-stretch">
               <div class="card card-section">
                 <div class="card-body">
                   <h5 class="card-title">Resiliency Management</h5>
@@ -575,7 +575,7 @@
   </section>
 
   <!-- Documents Component -->
-  <section class="section-2 section-body-3 section-top-bottom">
+  <section id="Documents" class="section-2 section-body-3 section-top-bottom">
     <header class="container">
       <div class="d-flex align-items-center justify-content-center">
         <div class="d-flex flex-column text-center">
@@ -871,7 +871,7 @@
   </section>
 
   <!--Tools and Technologies Component -->
-  <section class="section-body-3  section-3 section-top-bottom">
+  <section id="Tools" class="section-body-3  section-3 section-top-bottom">
     <header class="container">
       <div class="d-flex align-items-center justify-content-center">
         <div class="d-flex flex-column text-center">
@@ -939,7 +939,7 @@
   </section>
 
   <!--Achievements Component -->
-  <section class="section-body-3 section-2 section-top-bottom">
+  <section id="Achievements" class="section-body-3 section-2 section-top-bottom">
     <header class="container">
       <div class="d-flex align-items-center justify-content-center">
         <div class="d-flex flex-column text-center">
@@ -968,14 +968,14 @@
   </section>
 
   <!--Team Component -->
-  <section class="section-body-3 section-3 section-top-bottom">
+  <section id="Team" class="section-body-3 section-3 section-top-bottom">
     <header class="container">
       <div class="d-flex align-items-center justify-content-center">
         <div class="d-flex flex-column text-center">
           <p class="display-2 fw-bolder title-top-bottom">Team</p>
           <div class="row">
             <!--Udara Samaratunge-->
-            <div class="col-lg-3 p-3">
+            <div class="col-lg-3 p-3 d-flex align-items-stretch">
               <div class="card card-section">
                 <div class="card-body">
                   <h5 class="card-title">Udara Samaratunge ( Supervisor )</h5>
@@ -992,7 +992,7 @@
               </div>
             </div>
             <!--Dharshana Kasthurirathna-->
-            <div class="col-lg-3 p-3">
+            <div class="col-lg-3 p-3 d-flex align-items-stretch">
               <div class="card card-section">
                 <div class="card-body">
                   <h5 class="card-title">Dharshana Kasthurirathna ( Co-Supervisor )</h5>
@@ -1009,7 +1009,7 @@
               </div>
             </div>
             <!--Lasal Hettiarachchi-->
-            <div class="col-lg-3 p-3">
+            <div class="col-lg-3 p-3 d-flex align-items-stretch">
               <div class="card card-section">
                 <div class="card-body">
                   <h5 class="card-title">Lasal Hettiarachchi ( Lead )</h5>
@@ -1027,7 +1027,7 @@
               </div>
             </div>
             <!--Senura Jayadeva-->
-            <div class="col-lg-3 p-3">
+            <div class="col-lg-3 p-3 d-flex align-items-stretch">
               <div class="card card-section">
                 <div class="card-body">
                   <h5 class="card-title">Senura Jayadeva</h5>
@@ -1045,7 +1045,7 @@
               </div>
             </div>
             <!--Rusiru Abhisheak-->
-            <div class="col-lg-3 p-3">
+            <div class="col-lg-3 p-3 d-flex align-items-stretch">
               <div class="card card-section">
                 <div class="card-body">
                   <h5 class="card-title">Rusiru Abhisheak</h5>
@@ -1063,7 +1063,7 @@
               </div>
             </div>
             <!--Dilmi Palliyaguruge-->
-            <div class="col-lg-3 p-3">
+            <div class="col-lg-3 p-3 d-flex align-items-stretch">
               <div class="card card-section">
                 <div class="card-body">
                   <h5 class="card-title">Dilmi Palliyaguruge</h5>
