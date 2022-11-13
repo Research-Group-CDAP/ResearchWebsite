@@ -27,6 +27,10 @@
   background-color: #171616;
 }
 
+.contactus{
+  width: 85vw;
+}
+
 @media (min-width: 576px) {
   .heading {
     font-size: 100px;
